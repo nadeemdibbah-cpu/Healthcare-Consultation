@@ -2,42 +2,34 @@
 
 ## Business Requirements
 
-- An MVP of a Kanban style Project Management application as a web app
-- The web app should only have 1 board
-- The board has fixed 5 columns that can be renamed
-- Each card has a title and details only
-- Drag and drop interface to move cards between columns
-- Add a new card to a column; delete an existing card
-- No more functionality: no archive, no search/filter. Keep it simple.
-- The priority is a slick, professional, gorgeous UI/UX with very simple features
-- The app should open with dummy data populated for the single board
+- Build an MVP healthcare assistant as a web application.
+- Patients can describe a health concern in a chat interface.
+- The assistant triages concerns to either a Dentist or General Practitioner (GP).
+- The assistant can answer appointment-availability inquiries for the matched specialist.
+- The assistant can accept and acknowledge service complaints or feedback.
+- Keep the experience simple, helpful, and professional. Do not add user accounts, persistence, search, or unrelated features.
 
 ## Technical Details
 
-- Implemented as a modern NextJS app, client rendered
-- The NextJS app should be created in a subdirectory `frontend`
-- No persistence
-- No user management for the MVP
-- Use popular libraries
-- As simple as possible but with an elegant UI
+- Implement a modern, client-rendered Next.js application in a `frontend` subdirectory.
+- Use TypeScript, Tailwind CSS, Vercel AI SDK, and Groq with Llama 3.
+- Read the Groq API key from `GROQ_API_KEY` in `.env.local`; never expose it in client-side code.
+- Use clear dummy appointment availability. Persistence is not required for the MVP.
 
-## Color Scheme
+## Design
 
-- Accent Yellow: `#ecad0a` - accent lines, highlights
-- Blue Primary: `#209dd7` - links, key sections
-- Purple Secondary: `#753991` - submit buttons, important actions
-- Dark Navy: `#032147` - main headings
-- Gray Text: `#888888` - supporting text, labels
+- Present a calm, accessible healthcare chat experience.
+- Use Dark Navy `#032147` for primary headings, Blue `#209dd7` for key sections, Purple `#753991` for primary actions, Accent Yellow `#ecad0a` for highlights, and Gray `#888888` for supporting text.
 
-## Strategy
+## Delivery Requirements
 
-1. Write plan with success criteria for each phase to be checked off. Include project scaffolding, including .gitignore, and rigorous unit testing.
-2. Execute the plan ensuring all critiera are met
-3. Carry out extensive integration testing with Playwright or similar, fixing defects
-4. Only complete when the MVP is finished and tested, with the server running and ready for the user
+1. Write a short plan with checkable success criteria, including scaffolding, `.gitignore`, and unit tests.
+2. Implement the MVP.
+3. Perform integration testing with Playwright or a similar tool and fix defects found.
+4. Complete only after the app is tested and the development server is running.
 
-## Coding standards
+## Coding Standards
 
-1. Use latest versions of libraries and idiomatic approaches as of today
-2. Keep it simple - NEVER over-engineer, ALWAYS simplify, NO unnecessary defensive programming. No extra features - focus on simplicity.
-3. Be concise. Keep README minimal. IMPORTANT: no emojis ever
+1. Use current, idiomatic library versions and approaches.
+2. Keep the solution simple. Do not over-engineer or add unnecessary features.
+3. Keep the README minimal. Do not use emojis.
