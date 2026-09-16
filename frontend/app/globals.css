@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+:root { color-scheme: light; }
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f5f8fc;
+  color: #032147;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button, input { font: inherit; }
